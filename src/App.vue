@@ -1,15 +1,21 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app">
+    <h1>Hello there!</h1>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import WeatherKey from './keys/open-weather.txt'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    // HelloWorld
+  },
+  data() {
+    return {
+      key: WeatherKey,
+    }
   }
 }
 </script>
